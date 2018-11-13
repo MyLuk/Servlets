@@ -7,4 +7,12 @@
         <servlet-name>HelloWorld</servlet-name>
         <servlet-class>org.myluk.servelts.HelloWorld</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletWithot</servlet-name>
+        <servlet-class>org.myluk.servelts.ServletWithot</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletWithot</servlet-name>
+        <url-pattern>/WithOut</url-pattern>
+    </servlet-mapping>
 </web-app>
