@@ -8,9 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>Let's do this</title>
+    <title>Home</title>
   </head>
   <body>
-  Just do it
+  Home page
+  <a href="<%= request.getContextPath() %>/Controller?page=login">Login</a>
+  <a href="<%= request.getContextPath() %>/Controller?page=signup">SignUp</a>
+  <a href="<%= request.getContextPath() %>/Controller?page=about">About</a>
   </body>
 </html>
