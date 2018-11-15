@@ -11,9 +11,10 @@
     <title>Form demo</title>
 </head>
 <body>
-<form action="submit.jsp" method="post">
-    Full name<input type="text" name="name"/><br/>
-    Gender: <input type="radio" name="gender" value="male"> Male
+<%--when reference to jsp <form action="submit.jsp" method="post">--%>
+<form action="<%=request.getContextPath()%>/ServletController1" method="post">
+    Full name<input type="text" name="name" required/><br/>
+    Gender: <input type="radio" name="gender" value="male" checked="checked"> Male
             <input type="radio" name="gender" value="female"> Female <br/>
     Languages known: <input type="checkbox" name="Language" value="English"> English
                     <input type="checkbox" name="Language" value="Russian"> Russian
