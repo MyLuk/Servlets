@@ -11,9 +11,11 @@
     <title>Home</title>
   </head>
   <body>
-  Home page
-  <a href="<%= request.getContextPath() %>/Controller?page=login">Login</a>
-  <a href="<%= request.getContextPath() %>/Controller?page=signup">SignUp</a>
-  <a href="<%= request.getContextPath() %>/Controller?page=about">About</a>
+  Home page<br>
+  <%--<a href="<%= request.getContextPath() %>/Controller?page=login">Login</a>--%>
+  <%--<a href="<%= request.getContextPath() %>/Controller?page=signup">SignUp</a>--%>
+  <%--<a href="<%= request.getContextPath() %>/Controller?page=about">About</a><br>--%>
+  <a href="<%= request.getContextPath()%>/ServletSiteController?action=login">Login</a>
+  <a href="JSTLDEMO.jsp">JSTL</a>
   </body>
 </html>
